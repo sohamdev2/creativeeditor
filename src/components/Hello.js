@@ -1,5 +1,5 @@
 // import { h, defineComponent, nextTick } from "vue";
-import { h } from "vue";
+// import { h } from "vue";
 /**
  * Component props Object
  */
@@ -16,7 +16,7 @@ const props = {
 const Hello = {
   name: "hello",
   //   mixins: [ BaseMixin ],
-  render() {
+  render(h) {
     // try {
       //   this.error = false;
       //   const { $slots, $attrs, tag, componentData, realList, getKey } = this;
@@ -30,7 +30,7 @@ const Hello = {
       //   const attributes = getComponentAttributes({ $attrs, componentData });
       //   return componentStructure.render(h, attributes);
       //   return h("div", "hello");
-      return "hello world!";
+      return h({template: "hello world!"})
     // } catch (err) {
     //   //   this.error = true;
     //   return h("pre", { style: { color: "red" } }, err.stack);
