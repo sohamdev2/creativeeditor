@@ -8,7 +8,7 @@
     "build-lib": "vue-cli-service build --name creativeeditor --entry ./src/Creativeeditor.js --target lib",
     "lint": "vue-cli-service lint"
   },
-  "main": "src/plugin.js",
+  "main": "src/Creativeeditor.js",
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
