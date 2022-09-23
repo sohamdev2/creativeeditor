@@ -13,8 +13,8 @@ const props = {
 /**
  * Component Hello
  */
-const Hello = {
-  name: "hello",
+const Creativeeditor = {
+  name: "Creativeeditor",
   //   mixins: [ BaseMixin ],
   render(h) {
     // try {
@@ -30,7 +30,7 @@ const Hello = {
       //   const attributes = getComponentAttributes({ $attrs, componentData });
       //   return componentStructure.render(h, attributes);
       //   return h("div", "hello");
-      return h({template: "hello world!"})
+      return h({template: "<div>Hello Editor</div>"})
     // } catch (err) {
     //   //   this.error = true;
     //   return h("pre", { style: { color: "red" } }, err.stack);
@@ -52,4 +52,4 @@ const Hello = {
   },
 };
 
-export default Hello;
+export default Creativeeditor;
