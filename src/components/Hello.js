@@ -17,8 +17,8 @@ const Hello = {
   name: "hello",
   //   mixins: [ BaseMixin ],
   render() {
-    try {
-      this.error = false;
+    // try {
+      //   this.error = false;
       //   const { $slots, $attrs, tag, componentData, realList, getKey } = this;
       //   const componentStructure = computeComponentStructure({
       //     $slots,
@@ -29,11 +29,12 @@ const Hello = {
       //   this.componentStructure = componentStructure;
       //   const attributes = getComponentAttributes({ $attrs, componentData });
       //   return componentStructure.render(h, attributes);
-      return h("div", "hello");
-    } catch (err) {
-      //   this.error = true;
-      return h("pre", { style: { color: "red" } }, err.stack);
-    }
+      //   return h("div", "hello");
+      return "hello world!";
+    // } catch (err) {
+    //   //   this.error = true;
+    //   return h("pre", { style: { color: "red" } }, err.stack);
+    // }
   },
   props,
   data() {
